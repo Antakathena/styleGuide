@@ -7,49 +7,440 @@
     <title>SASS Training: Styleguide</title>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?familly=Nunito+Sans:400,400i,600,600i,700,700i&display=swap">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,600i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/comp/css/styles.css">
+    <link rel="stylesheet" href="./assets/comp/css/style-guide.css">
+    <link rel="stylesheet" href="./assets/comp/css/index.css">
+
 </head>
 
 <body>
-    <main class="main"></main>
-    <p class="test">TEST connexion au CSS</p>
-    <div class="styleguide">
-        <nav class="styleguide-nav">
-            <button class="btn-styleguide-menu" id="js-btn-styleguide-menu">MENU</button>
-            <ul class="styleguide-sidebar" id="js-styleguide-sidebar">
-                <li><a href="#styleguide-section-guidelines">Guidelines</a></li>
-                <li><a href="#styleguide-section-logo">Logo</a></li>
-                <li><a href="#styleguide-section-colors">Colors</a></li>
-                <li><a href="#styleguide-section-spacing">Spacing</a></li>
-                <li><a href="#styleguide-section-alignment">Alignment</a></li>
-                <li><a href="#styleguide-section-media">Media Queries</a></li>
-                <li><a href="#styleguide-section-grid">Grid</a></li>
-                <li><a href="#styleguide-section-typography">Typography</a></li>
-                <li><a href="#styleguide-section-images">Images</a></li>
-                <li><a href="#styleguide-section-icons">Icons</a></li>
-                <li><a href="#styleguide-section-buttons">Buttons</a></li>
-                <li><a href="#styleguide-section-forms">Forms</a></li>
-                <li><a href="#styleguide-section-content-blocks">Content Blocks</a></li>
-                <li><a href="#styleguide-section-progress-bars">Progress Bars</a></li>
-                <li><a href="#styleguide-section-avatars">Avatars</a></li>
-                <li><a href="#styleguide-section-banners">Banners</a></li>
-                <li><a href="#styleguide-section-lists">Lists: Styled</a></li>
-                <li><a href="#styleguide-section-cards">Cards</a></li>
-                <li><a href="#styleguide-section-tabs">Tabs <span class="styleguide-link-label">JS</span></a></li>
-                <li><a href="#styleguide-section-sliders">Sliders &amp; Carousels <span
-                            class="styleguide-link-label">JS</span></a></li>
-            </ul>
+    <main class="main">
+        <p class="test">TEST connexion au CSS</p>
+        <div class="styleguide">
+            <nav class="styleguide-nav">
+                <button class="btn-styleguide-menu" id="js-btn-styleguide-menu">MENU</button>
+                <ul class="styleguide-sidebar" id="js-styleguide-sidebar">
+                    <li><a href="#styleguide-section-guidelines">Guidelines</a></li>
+                    <li><a href="#styleguide-section-logo">Logo</a></li>
+                    <li><a href="#styleguide-section-colors">Colors</a></li>
+                    <li><a href="#styleguide-section-spacing">Spacing</a></li>
+                    <li><a href="#styleguide-section-alignment">Alignment</a></li>
+                    <li><a href="#styleguide-section-media">Media Queries</a></li>
+                    <li><a href="#styleguide-section-grid">Grid</a></li>
+                    <li><a href="#styleguide-section-typography">Typography</a></li>
+                    <li><a href="#styleguide-section-images">Images</a></li>
+                    <li><a href="#styleguide-section-icons">Icons</a></li>
+                    <li><a href="#styleguide-section-buttons">Buttons</a></li>
+                    <li><a href="#styleguide-section-forms">Forms</a></li>
+                    <li><a href="#styleguide-section-content-blocks">Content Blocks</a></li>
+                    <li><a href="#styleguide-section-progress-bars">Progress Bars</a></li>
+                    <li><a href="#styleguide-section-avatars">Avatars</a></li>
+                    <li><a href="#styleguide-section-banners">Banners</a></li>
+                    <li><a href="#styleguide-section-lists">Lists: Styled</a></li>
+                    <li><a href="#styleguide-section-cards">Cards</a></li>
+                    <li><a href="#styleguide-section-tabs">Tabs <span class="styleguide-link-label">JS</span></a></li>
+                    <li><a href="#styleguide-section-sliders">Sliders &amp; Carousels <span
+                                class="styleguide-link-label">JS</span></a></li>
+                </ul>
 
-        </nav>
-        <section class="styleguide-content">
-            <h1 class="styleguide-heading">Style Guide</h1>
-            <img src="./assets/svg/logos/logo.svg" width="36" height="36" alt="logo" class="styleguide-logo">
-        </section>
+            </nav>
 
-    </div>
+            <section class="styleguide-content">
+                <img src="./assets/svg/logos/logo.svg" width="36" height="36" alt="logo" class="styleguide-logo">
+                <h1 class="styleguide-heading">Style Guide</h1>
 
+                <section id="styleguide-section-guidelines" class="styleguide-section">
+                    <h2>Guidelines</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+                        <h3>{DEMO_TITLE}</h3>
+                        <!-- Add optional documentation for this demo -->
+                        <!-- <div class="styleguide-section-docs">
+                    <p>{SECTION_DOCUMENTATION}</p>
+                  </div> -->
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-logo" class="styleguide-section">
+                    <h2>Logo</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <!-- Add optional documentation for this demo -->
+                        <!-- <div class="styleguide-section-docs">
+                    <p>{SECTION_DOCUMENTATION}</p>
+                  </div> -->
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-colors" class="styleguide-section">
+                    <h2>SECTION TITLE : Colors</h2>
+                    <div class="styleguide-section-docs">
+                        <p>styleguide-section-docs</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <p>styleguide-section-block</p>
+                        <div class="styleguide-section-files">Reference files:</div>
+                        <h3>DEMO TITLE</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                DEMO MARKUP
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="styleguide-section-spacing" class="styleguide-section">
+                    <h2>Spacing</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-alignment" class="styleguide-section">
+                    <h2>Alignment</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-media" class="styleguide-section">
+                    <h2>Media Queries</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-grid" class="styleguide-section">
+                    <h2>Grid</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-typography" class="styleguide-section">
+                    <h2>Typography</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-images" class="styleguide-section">
+                    <h2>Images</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-icons" class="styleguide-section">
+                    <h2>Icons</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-buttons" class="styleguide-section">
+                    <h2>Buttons</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-forms" class="styleguide-section">
+                    <h2>Forms</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-content-blocks" class="styleguide-section">
+                    <h2>Content Blocks</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-progress-bars" class="styleguide-section">
+                    <h2>Progress Bars</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-avatars" class="styleguide-section">
+                    <h2>Avatars</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="styleguide-section-banners" class="styleguide-section">
+                    <h2>Banners</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-lists" class="styleguide-section">
+                    <h2>Lists: Styled</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-cards" class="styleguide-section">
+                    <h2>Cards</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="styleguide-section-tabs" class="styleguide-section">
+                    <h2>Tabs</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="styleguide-section-sliders" class="styleguide-section">
+                    <h2>Sliders &amp; Carousels</h2>
+                    <div class="styleguide-section-docs">
+                        <p>{SECTION_DOCUMENTATION}</p>
+                    </div>
+                    <div class="styleguide-section-block">
+                        <div class="styleguide-section-files">Reference files: {FILE_NAMES}</div>
+
+                        <h3>{DEMO_TITLE}</h3>
+                        <div class="styleguide-demo-block">
+                            <div class="styleguide-demo-each">
+                                {DEMO_MARKUP}
+                            </div>
+                            <button class="btn-styleguide-code js-btn-styleguide-code">Code</button>
+                        </div>
+
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/style-guide.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 .btn-styleguide-menu {
+  color: red;
   background-color: #F1F1F1;
   border-radius: 0;
   height: 30px;
@@ -9,7 +10,6 @@
   width: 100%;
   z-index: 1000;
 }
-
 @media (min-width: 600px) {
   .btn-styleguide-menu {
     display: none;
@@ -28,26 +28,22 @@
   z-index: 1000;
   transition: all 0.2s linear;
 }
-
 @media (max-width: 599px) {
   .styleguide-sidebar {
     left: -200px;
     top: 30px;
   }
 }
-
 @media (min-width: 600px) {
   .styleguide-sidebar {
     left: 0;
     top: 0;
   }
 }
-
 .styleguide-sidebar a {
   padding: 5px 10px;
   display: block;
 }
-
 .styleguide-sidebar a.active {
   color: #FFF;
   background-color: #313C5A;
@@ -57,7 +53,6 @@
   left: 0;
   transition: all 0.2s linear;
 }
-
 @media (max-width: 599px) {
   .styleguide-sidebar--show {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -68,7 +63,7 @@
   color: #313C5A;
   background: #F1F1F1;
   border-radius: 50%;
-  font-size: 71.42857%;
+  font-size: 71.4285714286%;
   font-weight: 700;
   padding: 2px 5px;
   margin-left: 5px;
@@ -89,14 +84,12 @@
   padding: 50px 0 30px 0;
   max-width: 1200px;
 }
-
 @media (min-width: 600px) {
   .styleguide-content {
     padding: 30px 20px 0 220px;
     margin: 0 auto;
   }
 }
-
 .styleguide-content pre {
   white-space: pre-wrap;
 }
@@ -104,12 +97,10 @@
 .styleguide-section {
   padding: 60px 0 0 0;
 }
-
-.styleguide-section>.styleguide-section-docs {
+.styleguide-section > .styleguide-section-docs {
   padding: 0 20px;
 }
-
-.styleguide-section>h2 {
+.styleguide-section > h2 {
   text-align: center;
 }
 
@@ -120,17 +111,14 @@
 
 .styleguide-section-block {
   background-color: #FFF;
-  box-shadow: 5px 5px 3px darkslategray;
   padding: 20px;
 }
-
-.styleguide-section-block>h3 {
+.styleguide-section-block > h3 {
   color: #999;
   text-align: center;
   padding: 0 0 10px 0;
 }
-
-.styleguide-section-block>h4 {
+.styleguide-section-block > h4 {
   text-align: center;
   margin-bottom: 10px;
 }
@@ -156,7 +144,6 @@
   margin: 10px 0 20px 0;
   display: block;
 }
-
 .styleguide-demo-block .styleguide-code-block {
   display: none;
 }
@@ -181,7 +168,6 @@
 
 .btn-styleguide-code {
   margin: 20px auto 30px;
-  box-shadow: 5px 5px 3px darkslategray;
   display: block;
   width: 100px;
 }

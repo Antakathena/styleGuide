@@ -14,6 +14,7 @@ $zindex-styleguide-menu: 1000;
 // STYLE GUIDE: BUTTON TO TOGGLE SIDEBAR ON MOBILE
 
 .btn-styleguide-menu {
+  color: red;
   background-color: $gray-mist;
   border-radius: 0;
   height: $spacing-3;
@@ -28,14 +29,14 @@ $zindex-styleguide-menu: 1000;
     display: none;
   }
 }
- 
+
 
 // ---------------------------------------------
 // STYLE GUIDE: SIDEBAR
 
 .styleguide-sidebar {
   background-color: $white;
-  font-weight: $font-semi-bold;  
+  font-weight: $font-semi-bold;
   padding-bottom: 150px; // Prevents cutting off menu from the bottom on browsers like Firefox
   width: $styleguide-sidebar-width;
   height: 100vh;
@@ -117,12 +118,12 @@ $zindex-styleguide-menu: 1000;
 
 .styleguide-section {
   padding: ($spacing * 6) 0 0 0;
-  
-  > .styleguide-section-docs {
+
+  >.styleguide-section-docs {
     padding: 0 $spacing-2;
   }
 
-  > h2 {
+  >h2 {
     text-align: center;
   }
 }
@@ -136,13 +137,13 @@ $zindex-styleguide-menu: 1000;
   background-color: $white;
   padding: $spacing-2;
 
-  > h3 {
+  >h3 {
     color: $gray-cement;
     text-align: center;
     padding: 0 0 $spacing 0;
   }
-  
-  > h4 {
+
+  >h4 {
     text-align: center;
     margin-bottom: $spacing;
   }
@@ -150,7 +151,7 @@ $zindex-styleguide-menu: 1000;
 
 .styleguide-section-files {
   font-style: italic;
-  text-align: center;  
+  text-align: center;
   margin: 0 0 $spacing-2 0;
 }
 
@@ -176,6 +177,7 @@ $zindex-styleguide-menu: 1000;
 }
 
 .styleguide-code-block--show {
+
   // Only show the selectors with a parent with class "styleguide-demo-block"
   .styleguide-demo-block & {
     display: block;
@@ -183,13 +185,14 @@ $zindex-styleguide-menu: 1000;
 }
 
 // Style Guide Content: Dos and Don'ts
-.styleguide-dont, .styleguide-do {
+.styleguide-dont,
+.styleguide-do {
   font-weight: $font-bold;
   text-transform: uppercase;
-} 
+}
 
 .styleguide-do {
-  color: $brand-1; 
+  color: $brand-1;
 }
 
 .styleguide-dont {
